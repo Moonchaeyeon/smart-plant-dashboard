@@ -44,22 +44,22 @@ const routes = [
     {
         path: "/detection",
         name: 'Detection',
-        components: Detection,
+        component: Detection,
     },
     {
         path: "/cctv",
         name: 'CCTV',
-        components: CCTV,
+        component: CCTV,
     },
     {
         path: "/monitoring",
         name: 'Monitoring',
-        components: Monitoring,
+        component: Monitoring,
     },
     {
         path: "/",
         name: 'Home',
-        components: Home,
+        component: Home,
     },
 
 ];

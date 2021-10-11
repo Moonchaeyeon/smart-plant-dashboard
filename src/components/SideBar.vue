@@ -1,12 +1,12 @@
 <template>
 <div class="side-bar">
-    <div style="color: white; padding:20px; text-align:center; font-size:20px;">Smart M</div>
+    <div @click="$router.push('/')" style="color: white; padding:20px; text-align:center; font-size:20px;">Smart M</div>
     <div class="menu">
         <div class="menu1">대시보드</div>
         <div class="menu2">
             <p @click="$router.push('/detection')">지능형 이상감지</p>
-            <p>CCTV 영상인식</p>
-            <p>IoT 모니터링</p>
+            <p @click="$router.push('/cctv')">CCTV 영상인식</p>
+            <p @click="$router.push('/monitoring')">IoT 모니터링</p>
         </div>
     </div>
 

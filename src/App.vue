@@ -1,7 +1,9 @@
 <template>
-<div class="title"></div>
 <SideBar></SideBar>
-<router-view></router-view>
+<div style="width:100%;">
+  <div class="title"></div>
+  <router-view></router-view>
+</div>
 </template>
 
 <script>
@@ -21,14 +23,13 @@ export default {
   background-color: #1a233a;
 }
 .side-bar {
-  position: absolute;
-  top: 0%;
-  width: 250px;
-  height: 1000px;
+  width: 300px;
+  height: 100%;
   background-color: #1a233a;
   color: #c8d9f8;
   text-align: left;
   padding: 10px;
+  box-shadow: 1px 0px 10px 3px grey;
 }
 
 .menu1 {
@@ -48,5 +49,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  flex-direction: row;
 }
 </style>

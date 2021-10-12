@@ -1,9 +1,12 @@
 <template>
-<SideBar></SideBar>
-<div style="width:100%;">
-  <div class="title"></div>
-  <router-view></router-view>
+<div style="display: flex; flex-direction: row;">
+  <SideBar></SideBar>
+  <div style="width:100%;">
+    <div class="title"></div>
+    <router-view></router-view>
+  </div>
 </div>
+<div class="footer">경희대학교</div>
 </template>
 
 <script>
@@ -32,6 +35,11 @@ export default {
   box-shadow: 1px 0px 10px 3px grey;
 }
 
+.footer {
+  width:100%;
+  height: 60px;
+}
+
 .menu1 {
   color: aqua;
   padding-left: 20px;
@@ -49,7 +57,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  display: flex;
-  flex-direction: row;
+
 }
 </style>
